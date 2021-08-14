@@ -2,9 +2,9 @@
   "name": "bekno-official",
   "version": "1.0.0",
   "description": "technology solutions e-business",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
