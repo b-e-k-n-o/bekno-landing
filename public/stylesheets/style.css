@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Oswald-Light';
+    src: url('../typography/Oswald/static/Oswald-ExtraLight.ttf');
+    font-weight: extra-light;
+}
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('../typography/Oswald/static/Oswald-Regular.ttf');
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../typography/Montserrat-Regular.ttf');
+    font-weight: regular;
+}
+
+/* *START OF COMMOM STYLES */
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+/* *END OF COMMOM STYLES */
+
+/* *START OF SECTION-WELCOME */
+
+.welcome-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: black;
+}
+
+.welcome-section {
+    
+    padding: 3rem;
+    width: 33%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-banner {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-banner-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+
+.welcome-banner-text span {
+    font-family: 'Oswald-Light';
+    width: auto;
+    font-size: 6rem;
+    letter-spacing: 2rem;
+    color: white;
+}
+
+
+/* *END OF SECTION-1 */
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, black,rgb(48, 47, 49));
+
+}
+.about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin: auto 0rem;
+
+}
+
+.about-text h1 {
+    font-family: 'Oswald-Regular';
+    font-weight: regular;
+    font-size: 10rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.about-text p {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #eee;
+    opacity: 0.8;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+
+}
+
+
+/* !RESPONSIVE */
+
+
+/* !END OF RESPONSIVE */
+
+/* *START OF SECTION-1 */
+/* *END OF SECTION-1 */
+
+/* *START OF SECTION-2 */
+/* *END OF SECTION-2 */
+
+/* *START OF SECTION-3 */
+/* *END OF SECTION-3 */
+
+/* *START OF SECTION-4 */
+/* *END OF SECTION-3 */
+
+
+
