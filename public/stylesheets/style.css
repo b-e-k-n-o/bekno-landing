@@ -24,10 +24,12 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
 }
 
 body {
     overflow-x: hidden;
+    min-height: -webkit-fill-available;
 }
 
 
@@ -90,7 +92,7 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background: linear-gradient(to bottom, black,rgb(48, 47, 49));
 
 }
@@ -143,7 +145,7 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background:rgb(48, 47, 49);
 
 }
@@ -195,7 +197,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background: linear-gradient(to top, black,rgb(48, 47, 49));
 }
 
@@ -244,7 +246,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    height:30rem;
+    height:25rem;
     width:25rem;
     padding: 1rem;
     background-color: #03cd;
@@ -261,9 +263,17 @@ body {
 }
 
 .article img {
-    height: 80%;
+    height: 70%;
     background-color:white;
     width: 100%;
+}
+
+.beknologia-btn {
+    margin-top: 3rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: #03cd;
+
 }
 
 /* *END OF SECTION-BEKNOLOGIA */
@@ -316,6 +326,7 @@ body {
     font-weight: 300;
     text-align: center;
 }
+
 
 /* *END OF SECTION-FOOTER */
 
@@ -422,7 +433,7 @@ body {
         flex-direction: column;
         align-items: center;
         padding: 2rem;
-        height: 21rem;
+        height: auto;
         overflow-y: scroll;
      
     }
