@@ -1,0 +1,62 @@
+<%- include ('../../partials/header.ejs') %>
+
+<style>
+
+/* COMMON STYLES */
+
+/* END OF COMMON STYLES */
+
+/* START OF SECTION 1*/
+.be-section-1 {
+background-color:#eee;
+height: 100vh;
+width: 100%;
+padding-top:3rem
+}
+.be-form {
+margin: 0rem auto;
+width: 30rem;
+padding: 1rem;
+background-color:rgb(34, 31, 31);
+color:#fff;
+}
+.be-form-heading {
+    letter-spacing:0.2rem;
+    padding-bottom:1rem;
+
+}
+.be-form label {
+    letter-spacing: 0.1rem;
+}
+.category-wrapper {
+    display:flex;
+    flex-direction:column;
+    width:40%;
+}
+#category-btn {
+    width: 50%;
+    margin: 0.5rem auto;
+}
+/* END OF SECTION 1*/
+
+
+</style>
+
+<a href="/blog" class="menu">Back</a>
+
+<section class="be-section-1"> 
+    <form class="be-form" method="POST" action="new">
+        <h1 class="be-form-heading">New category:</h1>
+        <div class="category-wrapper">
+            <label>Name:</label>
+            <input type="text" name="name">
+            <input type="submit" class="btn btn-dark" id="category-btn" value="Add"></input>
+        </div>
+    </form>
+</section>
+
+<div class="articles-container">
+    
+</div>
+
+<%- include ('../../partials/footer.ejs') %>
