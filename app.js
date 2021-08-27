@@ -3,6 +3,7 @@ const app = express();
 
 const categoriesController = require("./beknologia/categories/CategoriesController");
 const articlesController = require("./beknologia/articles/ArticlesController");
+const usersController = require("./users/UsersController");
 
 
 app.set('view engine', 'ejs');
@@ -15,16 +16,17 @@ app.use(express.json());
 
 
 app.get('/', (req, res) => {
-    res.render("teste.ejs");
+    res.render("home.ejs");
 })
 
-app.get('/blog', (req, res) => {
+app.get('/beknologia', (req, res) => {
     //res.send("Welcome to home page!")
-    res.render("blog.ejs")
+    res.render("soon.ejs")
 })
 
 app.use("/", categoriesController);
 app.use("/", articlesController);
+app.use("/", usersController);
 
 app.listen(3000, () => {
     console.log('Server listening on port: 3000')
