@@ -1,12 +1,20 @@
 const express = require('express');
 const app = express();
+const session = require("express-session");
 
 const categoriesController = require("./beknologia/categories/CategoriesController");
 const articlesController = require("./beknologia/articles/ArticlesController");
 const usersController = require("./users/UsersController");
 
 
+
+
 app.set('view engine', 'ejs');
+
+app.use(session({
+    secret: "somethinghardtodecode", cookie: { maxAge: 30000000 }
+}))
+
 
 app.use(express.static('public'));
 
@@ -21,7 +29,7 @@ app.get('/', (req, res) => {
 
 app.get('/beknologia', (req, res) => {
     //res.send("Welcome to home page!")
-    res.render("soon.ejs")
+    res.render("blog.ejs")
 })
 
 app.use("/", categoriesController);
