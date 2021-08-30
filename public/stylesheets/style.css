@@ -24,6 +24,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    
     height: -webkit-fill-available;
 }
 
@@ -94,7 +95,7 @@ body {
     justify-content: space-around;
     width: 100%;
     background: linear-gradient(to bottom, black,rgb(48, 47, 49));
-
+    overflow-x: hidden;
 }
 .about-section {
     display: flex;
@@ -150,6 +151,7 @@ body {
     width: 100%;
     height: calc(auto+15rem);
     background:rgb(48, 47, 49);
+    overflow-x: hidden;
 
 }
 .ecommerce-section {
@@ -240,6 +242,7 @@ body {
     width: 100%;
     height: calc(var(--vh, 1vh) * 100);
     background: linear-gradient(to top, black,rgb(48, 47, 49));
+    overflow-x: hidden;
 }
 
 .blog-section {
@@ -330,6 +333,7 @@ body {
     height: 100vh;
     padding-top:10rem ;
     background-color: black;
+    overflow-x: hidden;
 }
 
 .footer-section {
@@ -374,6 +378,7 @@ body {
 /* !RESPONSIVE */
 @media (max-width: 1000px) {
 
+
     .ecommerce-text p {
         width:90%
     
@@ -381,6 +386,9 @@ body {
 
     .ecommerce-wrapper {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10rem;
     }
 }
 
