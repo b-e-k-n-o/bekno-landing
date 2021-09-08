@@ -406,7 +406,7 @@ body {
         display: grid;
         grid-template:
         "logo logo " 45rem
-        "logo logo " 40rem 
+        "logo logo " 45rem 
         /auto auto;
         column-gap: 5rem;
         row-gap: 1rem;
@@ -437,8 +437,8 @@ body {
     .ecommerce-wrapper {
         display: grid;
         grid-template:
-        "logo logo " 30rem
-        "logo logo " 30rem 
+        "logo logo " 40rem
+        "logo logo " 40rem 
         /auto auto;
         column-gap: 2rem;
         row-gap: 1rem;
