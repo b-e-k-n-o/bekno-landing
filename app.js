@@ -32,6 +32,10 @@ app.get('/beknologia', (req, res) => {
     res.render("blog.ejs")
 })
 
+app.get('/resume', (req, res) => {
+    res.render("resumee.ejs")
+})
+
 app.use("/", categoriesController);
 app.use("/", articlesController);
 app.use("/", usersController);
