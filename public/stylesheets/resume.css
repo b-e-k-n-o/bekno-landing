@@ -57,11 +57,12 @@ section.ab {
     align-items: center;
     justify-content: center;
     background-color: blue;
-    height: 40rem;
+    height: 60rem;
     width: 100%;
 }
 .ab div {
     max-width: 50rem;
+    line-height: 80%;
 }
 .ab.name {
     font-family: Bungee;
@@ -79,36 +80,43 @@ section.ab {
     font-size: 2rem;
     text-transform: none;
 }
+/* END OF SECTION ONE */
 
 /* SECTION TWO */
 section.ca {
     background-color: blue;
     height: 40rem;
     width: 100%;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
     justify-content: center;
     align-items: center;
+    
 }
 .ca div {
-    background-color: chocolate;
     padding: 2rem;
-    min-width: 30rem;
-    
-    
 }
 .wrapper {
-
+    max-width: 80rem;
     
 }
 .card{
+    display: flex;
+    align-items: center;
     flex-direction: row;
-    border: blue 1px solid;
     padding: 1rem 2rem;
     margin:1rem;
 }
-.card.one{
 
-}
 .question {
+    font-family: Bungee;
+    line-height: 80%;
     font-size: 3rem;
 }
+
+.answer {
+    font-family: Oswald;
+    font-size: 1.5rem;
+}
+/* END OF SECTION TWO */
 
