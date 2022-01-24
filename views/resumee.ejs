@@ -4,73 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            font-size:62,5;
-            overflow-x: hidden;
-            
-        }
-
-        section {
-            display: flex;
-        }
-
-        .ab {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: blue;
-            height: 40rem;
-            width: 100%;
-        }
-        .ab div {
-            max-width: 50rem;
-        }
-        .ab.name {
-            font-size: 7rem;
-            text-transform: uppercase;
-            text-align: center;
-        }
-        .ab.name span {
-            color: chocolate;
-        }
-        .description{
-            font-size: 2rem;
-            text-transform: none;
-        }
-
-
-        .ca {
-            background-color: blue;
-            height: 40rem;
-            width: 100%;
-            justify-content: center;
-            /* align-items: center; */
-        }
-        .ca div {
-            background-color: chocolate;
-            padding: 2rem;
-            max-width: 40rem;
-        }
-        .title {
-            font-size: 5rem;
-        }
-        .wrapper {
-            flex-wrap: nowrap;
-        }
-        .card{
-            border: blue 1px solid;
-            padding: 1rem 2rem;
-            margin:1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheets/resume.css">
 
 </head>
 <body>
@@ -84,17 +20,24 @@
     </section>
     <section class="ca">
         <div>
-            <h1 class="title">About Me</h1>
+            <hr>
             <div class="wrapper">
-                <div class="card" >
-                    <h3>BlaBlaBla</h3>
-                    <p>nflksdjfnosdjmsodvmsidoj</p>
+                <div class="card one" >
+                    <div class="question">
+                        Who </br>
+                        Am </br>
+                        I? </br>
+                    </div>
+                    <div class="answer">
+                        <p>nflksdjfnosdjmsodvmsidoj</p>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card two">
                     <h3>BlaBlaBla</h3>
                     <p>nflksdjfnosdjmsodvmsidoj</p>
                 </div>
             </div>
+            <hr>
         </div>
         
     </section>
