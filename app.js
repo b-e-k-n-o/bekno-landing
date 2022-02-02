@@ -6,9 +6,6 @@ const categoriesController = require("./beknologia/categories/CategoriesControll
 const articlesController = require("./beknologia/articles/ArticlesController");
 const usersController = require("./users/UsersController");
 
-
-
-
 app.set('view engine', 'ejs');
 
 app.use(session({
